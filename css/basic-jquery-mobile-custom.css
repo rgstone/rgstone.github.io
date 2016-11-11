@@ -1,0 +1,29 @@
+/*jquery mobile custom theme*/
+.ui-body-a{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 1em;
+}
+.ui-body-d{
+	background-color: #a1cbc9;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: .5em;
+	padding-top: 0.5em;
+	margin-bottom: 1em;
+}
+.ui-body-f{
+	background-color: #b7dcd5;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.ui-block-a{
+	width: 20%;
+}
+.ui-block-b{
+	width: 30%;
+}
+.ui-block-c{
+	width: 50%;
+}

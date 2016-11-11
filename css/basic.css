@@ -1,0 +1,78 @@
+html,body{
+    height:100%;
+    margin-right:0px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+@media all and (min-width: 860px){
+    div.page{
+	width: 800px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 10px;
+    }
+}
+
+@media all and (max-width: 860px){
+    div.page{
+	padding-right: 3.5vw;
+	padding-left: 3.5vw;
+	padding-top: 10px;
+    }
+}
+
+
+h1 {
+  font-size: 24pt;
+}
+h2 {
+  font-size: 20pt;
+}
+
+ul.plain{
+    list-style: none;
+    padding-left: 20px;
+}
+
+ol.biblio {
+    list-style: biblio;	
+    padding-left: 40px;
+}
+
+li:not(:last-child){
+    margin-bottom: 5px;
+}
+
+/* li.biblio::before { */
+/*     content: "[" counter(biblio) "] "; */
+/* } */
+li.biblio { counter-increment: biblio;}
+
+@counter-style biblio{
+    system: extends decimal;
+    prefix: "[";
+    suffix: "]  ";
+}
+
+table { 
+	width:100%;
+	border-collapse: collapse;
+	
+	
+}
+table caption { text-align:left;  }
+table thead th { text-align:left;}
+table th, td {
+	text-align:left; 
+	padding:6px;
+	border: 1px dashed #dddddd; 
+
+	
+}
+
+/* https://css-tricks.com/examples/hrs/ */
+/* based on */
+/* Inset, by Dan Eden */
+hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
