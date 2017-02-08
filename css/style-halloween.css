@@ -1,4 +1,4 @@
-body {
+html,body {
   background-color: black;
   color: orange;
 }
@@ -10,5 +10,16 @@ a:link {
 }
 a:hover {
   color: #B2476B;
+}
+.title-banner{
+    background-color:#000000;
+    text-shadow:1px 1px 0px #685831;
+}
+.standout{
+    background-color:#000000;
+}
+
+table th, td{
+    border: 1px dashed orange;
 }
 

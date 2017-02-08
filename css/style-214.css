@@ -1,4 +1,4 @@
-body {
+html,body {
   background-color: #FFFFFF;
   color: #000000;
 }
@@ -14,3 +14,9 @@ a:hover {
   color: #7F4CB2;
 }
 
+.title-banner{
+    background-color:#A37ACC;
+}
+.standout{
+    background-color:#fff8fd;
+}

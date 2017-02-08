@@ -1,4 +1,3 @@
-//getting rid of jquery mobile. Stick to jquery.
 var minDepth = 0;//minDepth should be 0 for my current host online. 2 for UMN host
 //if (window.location.protocol === "file:") 
 //minDepth = 6; //home
@@ -9,6 +8,7 @@ var depth = (window.location.pathname.match(/\//g) || []).length - minDepth;
 var dirPrefix = Array(depth + 1).join("../");
 //to get to the `root' dir
 
+//TODO: Move date manipulation functins to single js.
 //to test just set today to specific date. Remember to clear it before updating remote version 
 var today = new Date();
 //console.log(today);

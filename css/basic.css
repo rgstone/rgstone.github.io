@@ -1,9 +1,16 @@
 html,body{
-    height:100%;
-    margin-right:0px;
-    margin-left: 0px;
-    margin-top: 0px;
+    margin:0px;
+    background-color: #F9F9F9;
 }
+html{
+    padding-bottom:16px;
+}
+body{
+    min-height:100%;
+}
+/* p{ */
+/*     margin:0px; */
+/* } */
 
 @media all and (min-width: 860px){
     div.page{
@@ -33,6 +40,7 @@ h2 {
 ul.plain{
     list-style: none;
     padding-left: 20px;
+    margin:0px;
 }
 
 ol.biblio {
@@ -75,4 +83,21 @@ table th, td {
 /* based on */
 /* Inset, by Dan Eden */
 hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.title-banner{
+    background-color:rgb(161, 203, 201);
+    padding:8px 10px;
+    margin:0px 0px 16px 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    text-shadow: 1px 1px 0px rgb(243,243,243);
+}
+.standout{
+    background-color:white;
+    padding:8px 10px;
+    margin:0px 0px 16px 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
 

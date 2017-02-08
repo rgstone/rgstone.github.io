@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../js/lib/jquery/jquery-3.1.1.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/util.js"></script>
+	<script src="../js/load-homework.js"></script>
+	<script>
+	 $(document).ready(function(){
+	     init();
+	     var homeworkElement=$("#hw");
+	     var homeworkJSONFile="Spring2017_CommutativeAlgebra-homework.json";
+	     var startDate=new Date(2017,1,27);
+	     var hl=homeworkLoader();
+	     hl.setup(homeworkElement,homeworkJSONFile);
+	     hl.loadHomework(startDate);
+	     
+	 });
+	</script>
+	<title>Spring 2017 Commutative Algebra</title>
+	<link rel="stylesheet" href="../css/basic.css"/>
+	<link id="custom-ss" rel="stylesheet" href=""/>
+    </head>
+    <body>
+
+	<div class="page">
+  	    <div class="main">
+		<div class="title-banner">
+		    <h1>Math620040 Spring 2017 Commutative Algebra</h1>
+		</div>
+		<div class="standout">
+		    <p><b>Day/Time:</b> 18:30 - 21:05, Mondays (02/27/2017 - 06/12/2017)<b><br>
+			Location:</b> HGX406 <b><br>
+			Instructor:</b> Chenyan Wu<br>
+			<b>Contact Information:</b> chywu "at" fudan.edu.cn<br>
+			<b>Office:</b> HGD 2310<br>
+			<b>Textbook:</b> Introduction to Commutative Algebra by M.F. Atiyah and I. G. MacDonald<br>
+		    </p>
+		</div>
+		
+		<div class="">
+		    <h3>Course Description:</h3> 
+		    <p>This course aims to give the prerequisites of the course on Algebraic Geometry. We will cover
+			all 11 chapters of the textbook. Time permitting we will also discuss some parts of Serre's book, Local Fields.
+			Students are welcome to suggest additional topics. Students are expected to have taken a course on Abstract Algebra.</p>
+		    <p>Homework will be assigned every week but not collected. Students are encouraged to discuss the assignments.
+			Near the middle of the semester students will report on
+			homework problems and they will be evaluated in terms of correctness and clarity of their talk. The final is
+			to take place on date to be announced. Grade will be based on the seminar talk and the final.</p>
+		</div>
+		
+		<div class="">
+		    <h3>Assignments: </h3></div>
+		<noscript><p>Please turn on Javascript to view this page properly.</p></noscript>
+		<!--ajax in the assignments here and form a table-->
+		<table id="hw-table" class="standout">
+		    <caption></caption>
+		    <thead>
+			<tr><th width="25%">Week</th><th width="25%">Topic</th><th width="50%">Homework</th></tr>
+		    </thead>
+		    <tbody id="hw"></tbody>
+		</table>
+	    </div>
+	</div>
+    </body>
+</html>
