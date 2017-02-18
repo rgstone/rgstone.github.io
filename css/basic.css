@@ -101,3 +101,12 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bott
 }
 
 
+.flex-row{
+    display:flex;
+    flex-flow: row wrap;
+    
+}
+
+.flex-item{
+    margin:5px 10px;
+}
