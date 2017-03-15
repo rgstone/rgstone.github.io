@@ -4,13 +4,17 @@
 	<meta content="text/html; charset=utf-8" http-equiv="content-type">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="js/lib/jquery/jquery-3.1.1.min.js"></script>
-	<script src="js/common.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/theme.js"></script>
 	<script>
-	 $(document).ready(init);
+	 $(document).ready(function(){
+	     var th=themeSetter(new Date());
+	     $("#theme").attr("href",th.themeCSSPath());
+	 });
 	</script>
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/basic.css"/>
-	<link id="custom-ss" rel="stylesheet" href=""/>
+	<link id="theme" rel="stylesheet" href="css/style-1.css"/>
 	<title>Chenyan Wu's Homepage</title>
     </head>
     <body>
@@ -35,11 +39,12 @@
 	    </div>
 	</div>
 	<div  id="sec-top" class= "page">
-	    <div class= "main">
+	    <div class="header">
 		<h1>Chenyan Wu (吴晨彦)</h1>
 		<p>Young Investigator at Shanghai Center for Mathematical
 		    Sciences<br/><a href="https://cywu.github.io/">https://cywu.github.io/</a></p>
-		<hr/>
+	    </div>
+	    <div class= "main">
 		<div>
 		    <p><b>Email:</b> chywu "at" fudan.edu.cn<br/></p>
 		    <p><b>Mailing Address:</b></p>

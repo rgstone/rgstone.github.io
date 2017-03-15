@@ -90,6 +90,9 @@ table th, td {
 /* Inset, by Dan Eden */
 hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
+.header{
+    border-bottom:solid 1px;
+}
 .title-banner{
     background-color:rgb(161, 203, 201);
     padding:8px 10px;
@@ -179,7 +182,7 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bott
     visibility:visible;
 }
 .menu-item{
-    background-color:rgba(249,249,249,.7);
+    background-color:rgba(255,255,255,.7);
     padding:10px;
     margin:5px 0px;
     border-radius:7px;
