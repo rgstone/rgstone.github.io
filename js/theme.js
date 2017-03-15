@@ -1,6 +1,7 @@
 //Given today's date return theme CSS file path
 var themeSetter=function (today) {
-    var dirPrefix = Array(depthOfCurrentFile ()).join("../"); //to get to the `root' dir
+    var depth=(window.location.pathname.match(/\//g) || []).length;
+    var dirPrefix = Array(depth).join("../"); //to get to the `root' dir
     var thisYear = today.getFullYear();
     var holidayList = {
 	"newYear1": {"name": "new-year",

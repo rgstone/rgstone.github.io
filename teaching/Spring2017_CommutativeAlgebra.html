@@ -5,24 +5,27 @@
 	<meta content="text/html; charset=utf-8" http-equiv="content-type">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="../js/lib/jquery/jquery-3.1.1.min.js"></script>
-	<script src="../js/common.js"></script>
 	<script src="../js/util.js"></script>
+	<script src="../js/theme.js"></script>
 	<script src="../js/load-homework.js"></script>
 	<script>
 	 $(document).ready(function(){
-	     init();
+	     var th=themeSetter(new Date());
+	     $("#theme").attr("href",th.themeCSSPath());
+
 	     var homeworkElement=$("#hw");
 	     var homeworkJSONFile="Spring2017_CommutativeAlgebra-homework.json";
 	     var startDate=new Date(2017,1,27);
 	     var hl=homeworkLoader();
 	     hl.setup(homeworkElement,homeworkJSONFile);
 	     hl.loadHomework(startDate);
-	     
 	 });
 	</script>
-	<title>Spring 2017 Commutative Algebra</title>
+
+	<link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="../css/basic.css"/>
-	<link id="custom-ss" rel="stylesheet" href=""/>
+	<link id="theme" rel="stylesheet" href="../css/style-1.css"/>
+	<title>Spring 2017 Commutative Algebra</title>
     </head>
     <body>
 

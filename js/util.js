@@ -38,11 +38,8 @@ function getDateNthDay(date, i, d) {
     }
 }
 
-function depthOfCurrentFile(){
-    (window.location.pathname.match(/\//g) || []).length;
-}
 
-    function pad(n, width, z) {
+function pad(n, width, z) {
     //pads a number to specified width with given character z.
     //number not trimmed if length larger than width.
     z = z || '0';

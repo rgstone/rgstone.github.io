@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="../js/lib/jquery/jquery-2.2.1.min.js"></script>
-<script src="../js/common.js"></script>
-<script>
-$(document).ready(init);
-</script>
-<link rel="stylesheet" href="../css/basic.css"/>
-<link id="custom-ss" rel="stylesheet" href=""/>
-<title>Schedule of Lectures</title>
-</head>
-<body>
-<div class= "page">
-<div class= "main">
-Note: (even) means sub-problems (b), (d), (f), etc.
-<table border="1" cellpadding="2"
-cellspacing="0" width="100%">
-<col style="width:15%">
-<col style="width:20%">
-<col style="width:45%">
-<col style="width:20%">
-<thead>
-<tr>
-<th>
-Week
-</th>
-<th>
-Topic
-</th>
-<th>
-Homework
-</th>
-<th>
-Due Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>09/01 - 09/07</td>
-<td>1.1 - 1.4</td>
-<td>1.2.14, 1.3.4, 1.3.15, 1.3.17, 1.3.22 (even), 1.4.9, 1.4.19
-(even)</td>
-<td>09/15</td>
-</tr>
-<tr>
-<td>09/08 - 09/14</td>
-<td>1.5, 1.6, 1.8, 1.9</td>
-<td>1.5.4, 1.5.7, 1.5.24(b,f,h), 1.6.25 (b,d), 1.6.3, 1.8.2(d,f), 1.8.5, 1.9.1(g)</td>
-<td>09/19</td>
-</tr>
-<tr>
-<td>09/15 - 09/21</td>
-<td>Cramer'rule (c.f. Ex. 1.9.22), 2.1, 2.2, 2.3</td>
-<td>2.1.2, 2.2.1, 2.2.2(even), 2.2.15(even), 2.3.2, 2.3.8, 2.3.23, 2.3.33(a,e,g)</td>
-<td>09/26</td>
-</tr>
-<tr><td>09/22 - 09/28</td><td>2.4, 2.5</td><td>2.4.2, 2.4.3(a,c), 2.4.10, 2.5.2(b,d,f), 2.5.12, 2.5.22, 2.5.36</td><td>10/03</td></tr>
-<tr><td>09/29 - 10/05</td><td>3.1 - 3.3</td><td>3.1.2 (ceg), 3.1.13, 3.1.22, 3.2.6, 3.2.36</td><td>10/10</td></tr>
-<tr><td>10/06 - 10/12</td><td>3.3, 3.4, 3.5</td><td>3.3.3, 3.3.6, 3.3.28(bef), 3.5.2(bdh), 3.5.6(c), 3.5.7(bd), 3.5.11</td><td>10/17</td></tr>
-<tr><td>10/13 - 10/19</td><td>3.4, 3.6 (for reading)</td><td>3.4.22(vi,viii), 3.4.24(vi,viii), 3.6.28(aceg), 3.6.29, 3.6.35</td><td>10/24</td></tr>
-<tr><td>10/20 - 10/26</td><td>5.1, 5.2</td><td>5.1.15, 5.1.21, 5.1.28, 5.2.2(b), 5.2.3, 5.2.4, 5.2.8(i, just use vectors in 5.2.1(a), no need to do (bc))</td><td>10/31</td></tr>
-<tr><td>10/27 - 11/02</td><td>5.3, 5.6</td><td>5.3.1, 5.3.5, 5.3.27(bdf), 5.6.3, 5.6.4(bd), 5.6.20(bd), 5.6.23</td><td>11/07</td></tr>
-<tr><td>11/03 - 11/09</td><td>7.1</td><td>7.1.5(aceg), 7.1.7, 7.1.9, 7.1.14, 7.1.30(b), 7.1.39(ab) </td><td>11/14</td></tr>
-<tr><td>11/10 - 11/16</td><td>7.2, 7.3</td><td>7.2.6, 7.2.12(ace), 7.2.13, 7.2.25(ac), 7.2.26(ce), 7.2.30(b)</td><td>11/21</td></tr>
-<tr><td>11/17 - 11/23</td><td>7.5, 8.2</td><td>7.5.3(ac), 7.5.18, 8.2.1(hjk), 8.2.4(b), 8.2.16, 8.2.17, 8.2.31(a(i)(iv)), 8.2.37</td><td>12/01</td></tr>
-<tr><td>11/24 - 11/30</td><td>8.3</td><td>8.3.3(dfh), 8.3.8, 8.3.15(dfh), 8.3.21(bdf)</td><td>12/05</td></tr>
-<tr><td>12/01 - 12/07</td><td>8.4, 8.5</td><td>8.4.2(bd), 8.4.17(ace), 8.4.28, 8.4.35, 8.5.1(be), 8.5.2(continue with 8.5.1(be)), 8.5.15</td><td>12/10</td></tr>
-<tr><td>12/08 - 12/10</td><td>8.6</td><td>8.6.7, 8.6.9, 8.6.11, 8.6.14</td><td>optional, no need to hand in</td></tr>
-</tbody>
-</table>
-</div></div>
-</body>
+    <head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../js/lib/jquery/jquery-3.1.1.min.js"></script>
+	<script src="../js/util.js"></script>
+	<script src="../js/theme.js"></script>
+	<script>
+	 $(document).ready(function(){
+	     var th=themeSetter(new Date());
+	     $("#theme").attr("href",th.themeCSSPath());
+	 });
+	</script>
+	<link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../css/basic.css"/>
+	<link id="theme" rel="stylesheet" href="../css/style-1.css"/>
+	<title>Schedule of Lectures</title>
+    </head>
+    <body>
+	<div class= "page">
+	    <div class= "main">
+		Note: (even) means sub-problems (b), (d), (f), etc.
+		<table border="1" cellpadding="2"
+		       cellspacing="0" width="100%">
+		    <col style="width:15%">
+		    <col style="width:20%">
+		    <col style="width:45%">
+		    <col style="width:20%">
+		    <thead>
+			<tr>
+			    <th>
+				Week
+			    </th>
+			    <th>
+				Topic
+			    </th>
+			    <th>
+				Homework
+			    </th>
+			    <th>
+				Due Date
+			    </th>
+			</tr>
+		    </thead>
+		    <tbody>
+			<tr>
+			    <td>09/01 - 09/07</td>
+			    <td>1.1 - 1.4</td>
+			    <td>1.2.14, 1.3.4, 1.3.15, 1.3.17, 1.3.22 (even), 1.4.9, 1.4.19
+				(even)</td>
+			    <td>09/15</td>
+			</tr>
+			<tr>
+			    <td>09/08 - 09/14</td>
+			    <td>1.5, 1.6, 1.8, 1.9</td>
+			    <td>1.5.4, 1.5.7, 1.5.24(b,f,h), 1.6.25 (b,d), 1.6.3, 1.8.2(d,f), 1.8.5, 1.9.1(g)</td>
+			    <td>09/19</td>
+			</tr>
+			<tr>
+			    <td>09/15 - 09/21</td>
+			    <td>Cramer'rule (c.f. Ex. 1.9.22), 2.1, 2.2, 2.3</td>
+			    <td>2.1.2, 2.2.1, 2.2.2(even), 2.2.15(even), 2.3.2, 2.3.8, 2.3.23, 2.3.33(a,e,g)</td>
+			    <td>09/26</td>
+			</tr>
+			<tr><td>09/22 - 09/28</td><td>2.4, 2.5</td><td>2.4.2, 2.4.3(a,c), 2.4.10, 2.5.2(b,d,f), 2.5.12, 2.5.22, 2.5.36</td><td>10/03</td></tr>
+			<tr><td>09/29 - 10/05</td><td>3.1 - 3.3</td><td>3.1.2 (ceg), 3.1.13, 3.1.22, 3.2.6, 3.2.36</td><td>10/10</td></tr>
+			<tr><td>10/06 - 10/12</td><td>3.3, 3.4, 3.5</td><td>3.3.3, 3.3.6, 3.3.28(bef), 3.5.2(bdh), 3.5.6(c), 3.5.7(bd), 3.5.11</td><td>10/17</td></tr>
+			<tr><td>10/13 - 10/19</td><td>3.4, 3.6 (for reading)</td><td>3.4.22(vi,viii), 3.4.24(vi,viii), 3.6.28(aceg), 3.6.29, 3.6.35</td><td>10/24</td></tr>
+			<tr><td>10/20 - 10/26</td><td>5.1, 5.2</td><td>5.1.15, 5.1.21, 5.1.28, 5.2.2(b), 5.2.3, 5.2.4, 5.2.8(i, just use vectors in 5.2.1(a), no need to do (bc))</td><td>10/31</td></tr>
+			<tr><td>10/27 - 11/02</td><td>5.3, 5.6</td><td>5.3.1, 5.3.5, 5.3.27(bdf), 5.6.3, 5.6.4(bd), 5.6.20(bd), 5.6.23</td><td>11/07</td></tr>
+			<tr><td>11/03 - 11/09</td><td>7.1</td><td>7.1.5(aceg), 7.1.7, 7.1.9, 7.1.14, 7.1.30(b), 7.1.39(ab) </td><td>11/14</td></tr>
+			<tr><td>11/10 - 11/16</td><td>7.2, 7.3</td><td>7.2.6, 7.2.12(ace), 7.2.13, 7.2.25(ac), 7.2.26(ce), 7.2.30(b)</td><td>11/21</td></tr>
+			<tr><td>11/17 - 11/23</td><td>7.5, 8.2</td><td>7.5.3(ac), 7.5.18, 8.2.1(hjk), 8.2.4(b), 8.2.16, 8.2.17, 8.2.31(a(i)(iv)), 8.2.37</td><td>12/01</td></tr>
+			<tr><td>11/24 - 11/30</td><td>8.3</td><td>8.3.3(dfh), 8.3.8, 8.3.15(dfh), 8.3.21(bdf)</td><td>12/05</td></tr>
+			<tr><td>12/01 - 12/07</td><td>8.4, 8.5</td><td>8.4.2(bd), 8.4.17(ace), 8.4.28, 8.4.35, 8.5.1(be), 8.5.2(continue with 8.5.1(be)), 8.5.15</td><td>12/10</td></tr>
+			<tr><td>12/08 - 12/10</td><td>8.6</td><td>8.6.7, 8.6.9, 8.6.11, 8.6.14</td><td>optional, no need to hand in</td></tr>
+		    </tbody>
+		</table>
+	    </div></div>
+    </body>
 </html>
