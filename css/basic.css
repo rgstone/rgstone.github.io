@@ -20,7 +20,7 @@ body{
 	padding-top: 10px;
     }
     .fixed-float-nav{
-	right:calc(100vw - 830px);
+	right: 30px;
     }
 }
 
