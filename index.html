@@ -8,12 +8,33 @@
 	<script>
 	 $(document).ready(init);
 	</script>
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/basic.css"/>
 	<link id="custom-ss" rel="stylesheet" href=""/>
 	<title>Chenyan Wu's Homepage</title>
     </head>
     <body>
-	<div class= "page">
+	<div class="fixed-float-nav">
+	    <div class="menu flex-col align-right">
+		<div class="submenu flex-col">
+		    <div class="menu-item flex-col align-center"><a href="#sec-top">Personal Information</a></div>
+		    <div class="menu-item flex-col align-center"><a href="#sec-teaching">Teaching & Seminars</a></div>
+		    <div class="menu-item flex-col align-center"><a href="#sec-research">Research & Publication</a></div>
+		    <div class="menu-item flex-col align-center"><a href="#sec-talks">Talks</a></div>
+		    <div class="menu-item flex-col align-center"><a href="#sec-conferences">Conferences</a></div>
+		    <div class="menu-item flex-col align-center"><a href="#sec-employment">Employment & Education</a></div>
+		</div>
+		<div class="overlay-container large-icon flex-col align-center">
+		    <div class="button1 overlay-item ui-button flex-col center-center">
+			<i class="fa fa-plus fa-lg fa-fw" aria-hidden="true" aria-label="open menu"></i>
+		    </div>
+		    <div class="button2 overlay-item ui-button flex-col center-center">
+			<i class="fa fa-minus fa-lg fa-fw" aria-hidden="true" aria-label="collapse menu"></i>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div  id="sec-top" class= "page">
 	    <div class= "main">
 		<h1>Chenyan Wu (吴晨彦)</h1>
 		<p>Young Investigator at Shanghai Center for Mathematical
@@ -33,7 +54,7 @@
 		    </div>
 		</div>
 
-		<h2>Teaching</h2>
+		<h2 id="sec-teaching">Teaching</h2>
 		<ul>
 		    <li>Spring 2017 MATH620040 <a href="teaching/Spring2017_CommutativeAlgebra.html">Commutative
 			Algebra</a></li>
@@ -56,21 +77,35 @@
 			Algebra</a></li>
 		</ul>
 
-		<h2>Seminars</h2>
+		<h2 id="sec-seminars">Seminars</h2>
 		<ul><li>
 		    Spring 2012 <a href="http://math.umn.edu/%7Edhjiang/Smnr/lie.html">Lie Theory
 		    Seminar</a></li>
 		</ul>
 
-		<h2>Reseach</h2>
+		<h2 id="sec-research">Reseach</h2>
 		<p>I am most interested in Number Theory and Arithmetic Geometry.
 		    Currently I am focusing on automorphic forms, theta
 		    correspondence, <var>L</var>-functions, endoscopy,
 		    periods and Abelian varieties.<br/>
-		    <a href="articles/index.html">Here</a> are some of
-		    my articles and preprints.</p>
+		    
+		<h2 id="sec-publication">Publication and Preprints</h2>
+		<ol class="biblio">
+		    <li class="biblio">A Critical Case of Rallis Inner Product Formula.  Sci. China Math. 60 (2017), no. 2, 201–222. <a href="https://arxiv.org/abs/1603.04123">arXiv:1603.04123</a>.</li>
+		    <li class="biblio">Periods and (<var>χ</var>, <var>b</var>)-Factors of Cuspidal Automorphic Forms of Symplectic Groups. With Dihua Jiang (江迪华). Accepted by Israel Journal of Mathematics. Preprint. <a href="https://arxiv.org/abs/1507.03297">arXiv:1507.03297</a>, 2015.
+		    </li>
+		    <li class="biblio">On (<var>χ</var>, <var>b</var>)-factors of Cuspidal Automorphic Representations of Unitary Groups II. With Dihua Jiang (江迪华). Preprint.</li>
+		    <li class="biblio">On (<var>χ</var>, <var>b</var>)-factors of Cuspidal Automorphic Representations of Unitary Groups I. With Dihua Jiang (江迪华).  J. Number Theory 161 (2016), 88–118. <a href="https://arxiv.org/abs/1409.0767">arXiv:1409.0767</a>.</li>
+		    <li class="biblio">Irreducibility of Theta Lifting for Unitary Groups. J. Number Theory, 133(10):3296–3318, 2013.  	<a href="https://arxiv.org/abs/1409.0770">arXiv:1409.0770</a>.</li>
+		    <li class="biblio">
+			<var>F</var>-virtual Abelian Varieties of GL<sub>2</sub>-type. <a href=
+											  "https://arxiv.org/abs/1507.03069">arXiv:1507.03069</a>, 2015.
+		    </li>
+		    <li class="biblio">Classification of Small Covers over Prisms up to Equivariant Cobordism. Adv. Math. (China),
+			37(5):584–590, 2008.</li>
+		</ol>
 
-		<h2>Talks</h2>
+		<h2 id="sec-talks">Talks</h2>
 		<ul>
 		    <li>Period Integrals, <var>L</var>-functions
 			and (<var>χ</var>, <var>b</var>)-theory,
@@ -140,7 +175,7 @@
 		    <li>Moduli space of virtual Abelian varieties, Yale University, New Haven, CT, USA, Jan. 25, 2011</li>
 		</ul>
 
-		<h2>Conferences, Workshops and Short Visits</h2>
+		<h2 id="sec-conferences">Conferences, Workshops and Short Visits</h2>
 		<ul>
 		    <li>Visiting Professor Dihua Jiang at University of Minnesota, Minneapolis, USA, Dates TBA</li>
 		    <li>Workshop on Automorphic Representations and Related Topics at Shanghai Center for Mathematical Sciences, Shanghai, and Zhejiang University, Hangzhou, China, July TBA, 2017</li>
@@ -156,14 +191,14 @@
 		    <li>Past events are omitted.</li>
 		</ul>
 
-		<h2>Employment and Visiting Positions</h2>
+		<h2 id="sec-employment">Employment and Visiting Positions</h2>
 		<ul class= "plain"><li>Young Investigator, Shanghai Center for Mathematical Sciences, Sept. 2015 - present</li>
 		    <li>Dunham Jackson Assistance Professor, University of Minnesota, Aug. 29, 2011 - May 24, 2015, mainly working with Professor <a href= "http://www.math.umn.edu/~jiang034/">Dihua Jiang (江迪华)</a>.</li>
 		    <li>Visiting Max-Planck Institute for Mathematics, Sept. 1, 2012 - Aug.
 			31, 2013</li>
 		</ul>
 
-		<h2>Education</h2>
+		<h2 id="sec-education">Education</h2>
 		<ul class= "plain"><li>Ph.D. Mathematics, Columbia University, 2006–2011, Thesis Advisor:
 		    Professor <a href="https://web.math.princeton.edu/~shouwu/">Shou-Wu Zhang (张寿武)</a>;</li>
 		    <li>B.S. Mathematics, Fudan (复旦) University, 2002–2006.</li>
