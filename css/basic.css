@@ -20,7 +20,7 @@ body{
 	padding-top: 10px;
     }
     .fixed-float-nav{
-	left: 805px;
+	right:calc(100vw - 830px);
     }
 }
 
@@ -163,10 +163,10 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bott
 }
     
 .menu .submenu{
-    visibility:hidden;
-}
+    display:none;
+ }
 .menu:hover .submenu{
-    visibility:visible;
+    display:block;
 }
 .menu .button2{
     visibility:hidden;
