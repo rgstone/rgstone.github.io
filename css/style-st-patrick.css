@@ -1,0 +1,22 @@
+html,body {
+  background-color: #FFFFFF;
+  color: #169d75;
+}
+
+a:visited {
+  color: #23c083;
+ 
+}
+a:link {
+  color: #0d719b;
+}
+a:hover {
+  color: #8a3fd0;
+}
+
+.title-banner{
+    background-color:#c8fb9a;
+}
+.standout{
+    background-color:#fafbf5;
+}
