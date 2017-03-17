@@ -8,7 +8,8 @@
 	<script src="js/theme.js"></script>
 	<script>
 	 $(document).ready(function(){
-	     var th=themeSetter(new Date());
+	     var th=themeSetter();
+	     console.log(th.themeCSSPath());
 	     $("#theme").attr("href",th.themeCSSPath());
 	 });
 	</script>
