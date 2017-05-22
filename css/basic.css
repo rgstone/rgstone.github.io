@@ -93,6 +93,10 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bott
 .header{
     border-bottom:solid 1px;
 }
+.footer{
+    padding-top:10px;
+    border-top:solid 1px;
+}
 .title-banner{
     background-color:rgb(161, 203, 201);
     padding:8px 10px;
