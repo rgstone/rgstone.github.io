@@ -231,6 +231,9 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bott
     .item-title{
         grid-column:3/span 1;
     }
+    .item-note{
+        grid-column:3/span 1;
+    }
     .item-vertical-skip{
         grid-column:1/span 3;
         height:10px;
@@ -253,6 +256,9 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bott
         grid-column:2/span 1;
     }
     .item-title{
+        grid-column:1/span 2;
+    }
+    .item-note{
         grid-column:1/span 2;
     }
     .item-vertical-skip{
