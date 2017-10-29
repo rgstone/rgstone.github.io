@@ -23,3 +23,18 @@ table th, td{
     border: 1px dashed orange;
 }
 
+.menu-item{
+    background-color:rgba(0,0,0,.7);
+    padding:10px;
+    margin:5px 0px;
+    border-radius:7px;
+    border-width:1px;
+    border-style:solid;
+}
+
+.ui-button{
+    background-color:rgba(0,0,0,.6);
+    border-radius:7px;
+    border-width:1px;
+    border-style:solid;
+}
