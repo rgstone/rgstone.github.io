@@ -213,14 +213,22 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bott
     display:grid;
 }
 
+.item-abstract::before{
+    content:"Abstract: ";
+    font-weight:bold;
+}
+
 @media all and (min-width: 600px){
     .conference-schedule{
         grid-template-columns:1fr 1fr 4fr;
         grid-template-rows:auto;
+        grid-gap:.5em;
     }
-
+    .item-abstract{
+        grid-column:2/span 2;
+    }
     .item-date{
-        grid-column:1/span 3 ;
+        grid-column:1/span 3;
     }
     .item-time{
         grid-column:1/span 1;
@@ -244,10 +252,13 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bott
     .conference-schedule{
         grid-template-columns:1fr 1fr;
         grid-template-rows:auto;
+        grid-gap:.5em;
     }
-
+    .item-abstract{
+        grid-column:1/span 2;
+    }
     .item-date{
-        grid-column:1/span 2 ;
+        grid-column:1/span 2;
     }
     .item-time{
         grid-column:1/span 1;
