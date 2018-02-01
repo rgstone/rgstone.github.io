@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <script src="../js/lib/jquery/jquery-3.1.1.min.js"></script>
+	    <script src="../js/util.js"></script>
+	    <script src="../js/theme.js"></script>
+	    <script>
+	     $(document).ready(function(){
+	         var th=themeSetter();
+	         $("#theme").attr("href",th.themeCSSPath());
+	     });
+	    </script>
+	    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css"/>
+	    <link rel="stylesheet" href="../css/basic.css"/>
+	    <link id="theme" rel="stylesheet" href="../css/style-1.css"/>
+	    <title>How to Disable Bing's Auto Translation</title>
+    </head>
+    <body>
+	    <div class="page">
+	        <div class="header">
+		        <h1>How to Disable Bing's Auto Translation</h1>
+	        </div>
+	        <div class="main">
+                <p>
+                    When you search with Bing International in China, you notice that Bing would produce a pop-up that contains the Chinese translation of the word that you happen to mouse over, that totally distracts you and that obscures what you want to see. (Bing International is a special version of Bing that conforms to censorship by China. Don't be fooled by the name.) There is a switch to turn this bug/feature off, but it enables itself again when you reload Bing. This `optimisation' for the Chinese gradually gets on your nerves. Here is a solution.
+                </p>
+                <p>
+                    I use <a href="https://github.com/gorhill/uBlock/">uBlock<sub>0</sub></a> to block Ads already, so why not ask it to block whatever that is that produces the translations? After digging through the html/javascript code a bit with the help of developer's tools in Firefox, I found the culprit with the glaring name of HoverTranslation.js. Thus all I need to do is to add the following to the `My filters' configuration of <a href="https://github.com/gorhill/uBlock/">uBlock<sub>0</sub></a>.
+                    <pre>
+                        <code>
+    ! Blocks Bing's auto translation
+    www.bing.com/*/HoverTranslation.js
+                        </code>
+                    </pre>
+                </p>
+                <h2>Off-topic:</h2>                   
+                <p>
+                    It looks that I can keep a blog here. Thus I tried to learn how to automate some tedious repetitious parts on, oops, Bing China and received some discouragement.
+                </p>
+                <p>
+                    <img src="img/Capture-static-site-bing-Chinese.jpg"/>
+                </p>
+                <p>
+                    On the other hand, Bing International gives me go.
+                </p>
+                <p>
+                    <img src="img/Capture-static-site-bing-international.jpg"/>
+                </p>
+                <p>
+                    To be honest, my friend in Boston said the real Bing also discouraged her.
+                </p>
+                <h2>Off-off-topic:</h2>
+                <p>
+                    Let's pretend that we will have a non-static site. Wordpress is a good choice, but it has the record of being once blocked by GFW. Medium is currently being blocked because of the Panama Papers. Theoretically I can run whatever blog software I want on my own relay server, but it may get blocked at any time without prior notice and I definitely do not enjoy having to set up blog software again and again. Conclusion: GFW is severely limiting my choices.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+                
