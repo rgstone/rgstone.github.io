@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    
+	    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <script src="../js/lib/jquery/jquery-3.1.1.min.js"></script>
+	    <script src="../js/util.js"></script>
+	    <script src="../js/theme.js"></script>
+	    <script src="../js/load-homework.js"></script>
+	    <script>
+	     $(document).ready(function(){
+	         var th=themeSetter();
+	         $("#theme").attr("href",th.themeCSSPath());
+
+	         var homeworkElement=$("#hw");
+	         var homeworkJSONFile="Spring2018_AbstractAlgebraII-homework.json";
+	         var startDate=new Date(2018,2,5);
+	         var hl=homeworkLoader();
+	         hl.setup(homeworkElement,homeworkJSONFile);
+	         hl.loadHomework(startDate);
+	     });
+	    </script>
+
+	    <link rel="stylesheet" href="../css/basic.css"/>
+	    <link id="theme" rel="stylesheet" href="../css/style-1.css"/>
+	    <title>Spring 2017 Commutative Algebra</title>
+    </head>
+    <body>
+
+	    <div class="page">
+  	        <div class="main">
+		        <div class="title-banner">
+		            <h1>Spring 2018 MATH130128.01 Abstract Algebra II</h1>
+		        </div>
+		        <div class="standout">
+		            <p><b>Day/Time:</b> 18:30 - 20:10, Mondays and 09:55 - 11:35, Wednesdays (03/05/2018 - 06/20/2018)<b><br>
+			            Location:</b> HGX408 <b><br>
+			            Instructor:</b> Chenyan Wu<br>
+			            <b>Contact Information:</b> chywu "at" fudan.edu.cn<br>
+			            <b>Office:</b> HGD 2310<br>
+			            <b>References:</b> Algebra by Serge Lang, 2002; Basic Algebra by Nathan Jacobson, 2009; Algebra by Michael Artin, 2010<br>
+		            </p>
+		        </div>
+		        
+		        <div class="">
+		            <h3>Course Description:</h3> 
+		            <p>This course is a continuation of the course, Abstract Algebra I. We will cover topics on Galois theory, modules over general rings and representation theory of finite groups. Students are welcome to suggest additional topics. Students are expected to be familiar with algebraic structures such as groups, rings and fields.</p>
+                    <h3>Grading Information:</h3> 
+		            <p>Homework is assigned every week and collected the next week. Later homework is not accepted. The lowest among the all homework scores will be dropped for each student. Students are encouraged to discuss the assignments among themselves and form ever-lasting friendship. On Mondays of even-numbered weeks, we will discuss the solutions to some of the homework problems. Bonus points will be given to students who present the solutions. Midterm will take place at a date to be announced and the final is scheduled on 15:30 - 17:30, 6th July, 2018. The grade will be based on the homework scores (30%), the midterm (30%), the final (40%) and the bonus points.</p>
+		        </div>
+		        
+		        <div class="">
+		            <h3>Assignments: </h3></div>
+		        <noscript><p>Please turn on Javascript to view this page properly.</p></noscript>
+		        <!--ajax in the assignments here and form a table-->
+		        <table id="hw-table" class="standout">
+		            <caption></caption>
+		            <thead>
+			            <tr><th width="25%">Week</th><th width="25%">Topic</th><th width="50%">Homework</th></tr>
+		            </thead>
+		            <tbody id="hw"></tbody>
+		        </table>
+	        </div>
+	</div>
+    </body>
+</html>
